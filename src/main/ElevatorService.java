@@ -34,6 +34,9 @@ public class ElevatorService {
         }
     }
     public String selectInsideButton(ElevatorInsideButtons button) throws ElevatorError {
+        if (button == null){
+            return "";
+        }
         switch(button){
             case CALLHELP:
                 elevator.setMaintenanceMode(true);
@@ -51,6 +54,9 @@ public class ElevatorService {
     }
     // negative numbers for basements
     public String selectInsideButtons(ArrayList<Integer> buttons){
+        if (buttons == null){
+            return "";
+        }
         buttons = sortElevatorButtons(buttons);
         for(int button : buttons){
             System.out.println(selectInsideButton(button));
