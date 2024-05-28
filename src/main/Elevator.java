@@ -1,30 +1,30 @@
 package main;
 
-//This is the elevator object
+// This is the elevator object
 
 public class Elevator {
-    private final int amountOfFloorsAboveGround;
+    private final int amountOfFloorsGroundAndAbove;
     private final int amountOfFloorsBelowGround;
     private int currentFloor;
     private boolean underMaintenance;
     private boolean isDoorOpen;
 
     public Elevator(){
-        amountOfFloorsAboveGround = 5;
+        amountOfFloorsGroundAndAbove = 5;
         amountOfFloorsBelowGround = 1;
         currentFloor = 1;
         underMaintenance = false;
         isDoorOpen =false;
     }
     public Elevator(int floorsAboveGround, int floorsBelowGround){
-        amountOfFloorsAboveGround = floorsAboveGround;
+        amountOfFloorsGroundAndAbove = floorsAboveGround;
         amountOfFloorsBelowGround = floorsBelowGround;
         currentFloor = 1;
         underMaintenance = false;
         isDoorOpen =false;
     }
-    public int getAmountOfFloorsAboveGround(){
-        return amountOfFloorsAboveGround;
+    public int getAmountOfFloorsGroundAndAbove(){
+        return amountOfFloorsGroundAndAbove;
     }
     public int getAmountOfFloorsBelowGround(){
         return amountOfFloorsBelowGround;

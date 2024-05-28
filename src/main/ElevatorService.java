@@ -68,7 +68,7 @@ public class ElevatorService {
         }
     }
     public static boolean floorDoesNotExist(Elevator elevator, int floor){
-        return (elevator.getAmountOfFloorsAboveGround() < floor || -elevator.getAmountOfFloorsBelowGround() > floor || floor == 0);
+        return (elevator.getAmountOfFloorsGroundAndAbove() < floor || -elevator.getAmountOfFloorsBelowGround() > floor || floor == 0);
     }
     private void moveElevator(int floor){
         int current = elevator.getCurrentFloor();
