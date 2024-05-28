@@ -16,7 +16,7 @@ public class Elevator {
         underMaintenance = false;
         isDoorOpen =false;
     }
-    public Elevator(int floorsAboveGround, int floorsBelowGround){
+    public Elevator(int floorsGroundAndAbove, int floorsBelowGround){
         amountOfFloorsGroundAndAbove = floorsAboveGround;
         amountOfFloorsBelowGround = floorsBelowGround;
         currentFloor = 1;
