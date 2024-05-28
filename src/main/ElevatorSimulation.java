@@ -36,7 +36,7 @@ public class ElevatorSimulation {
                     answer = ui.next();
                     System.out.println(elevatorService.selectOutsideButton(ElevatorOutsideButtons.DOWN, Integer.parseInt(answer)));
                 }
-                if(elevator.isUnderMaintenance() && !ElevatorService.floorDoesNotExist(elevator, Integer.parseInt(answer)) ) {
+                if(!elevator.isUnderMaintenance() && !ElevatorService.floorDoesNotExist(elevator, Integer.parseInt(answer)) ) {
                     do {
                         System.out.println("Enter a buttons separate by comma. " +
                                 " However, Call help open and close door can only be inputted alone" +
